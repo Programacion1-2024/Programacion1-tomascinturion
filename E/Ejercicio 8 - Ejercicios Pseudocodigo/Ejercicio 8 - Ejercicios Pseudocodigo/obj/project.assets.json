@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\tomic\\OneDrive\\Documentos\\GitHub\\Programacion1-tomascinturion\\E\\Ejercicio 1 - Ejercicios Pseudocodigo\\Ejercicio 1 - Ejercicios Pseudocodigo\\Ejercicio 1 - Ejercicios Pseudocodigo.csproj",
-      "projectName": "Ejercicio 1 - Ejercicios Pseudocodigo",
-      "projectPath": "C:\\Users\\tomic\\OneDrive\\Documentos\\GitHub\\Programacion1-tomascinturion\\E\\Ejercicio 1 - Ejercicios Pseudocodigo\\Ejercicio 1 - Ejercicios Pseudocodigo\\Ejercicio 1 - Ejercicios Pseudocodigo.csproj",
+      "projectUniqueName": "C:\\Users\\tomic\\OneDrive\\Documentos\\GitHub\\Programacion1-tomascinturion\\E\\Ejercicio 8 - Ejercicios Pseudocodigo\\Ejercicio 8 - Ejercicios Pseudocodigo\\Ejercicio 8 - Ejercicios Pseudocodigo.csproj",
+      "projectName": "Ejercicio 8 - Ejercicios Pseudocodigo",
+      "projectPath": "C:\\Users\\tomic\\OneDrive\\Documentos\\GitHub\\Programacion1-tomascinturion\\E\\Ejercicio 8 - Ejercicios Pseudocodigo\\Ejercicio 8 - Ejercicios Pseudocodigo\\Ejercicio 8 - Ejercicios Pseudocodigo.csproj",
       "packagesPath": "C:\\Users\\tomic\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\tomic\\OneDrive\\Documentos\\GitHub\\Programacion1-tomascinturion\\E\\Ejercicio 1 - Ejercicios Pseudocodigo\\Ejercicio 1 - Ejercicios Pseudocodigo\\obj\\",
+      "outputPath": "C:\\Users\\tomic\\OneDrive\\Documentos\\GitHub\\Programacion1-tomascinturion\\E\\Ejercicio 8 - Ejercicios Pseudocodigo\\Ejercicio 8 - Ejercicios Pseudocodigo\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\tomic\\AppData\\Roaming\\NuGet\\NuGet.Config",
