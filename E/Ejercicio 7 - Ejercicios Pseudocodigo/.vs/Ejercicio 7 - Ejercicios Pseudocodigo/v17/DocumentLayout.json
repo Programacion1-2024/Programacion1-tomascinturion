@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\tomic\\OneDrive\\Documentos\\GitHub\\Programacion1-tomascinturion\\E\\Ejercicio 7 - Ejercicios Pseudocodigo\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{619D1207-F5ED-4467-8C79-274F8A3BC129}|Ejercicio 7 - Ejercicios Pseudocodigo\\Ejercicio 7 - Ejercicios Pseudocodigo.csproj|c:\\users\\tomic\\onedrive\\documentos\\github\\programacion1-tomascinturion\\e\\ejercicio 7 - ejercicios pseudocodigo\\ejercicio 7 - ejercicios pseudocodigo\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{619D1207-F5ED-4467-8C79-274F8A3BC129}|Ejercicio 7 - Ejercicios Pseudocodigo\\Ejercicio 7 - Ejercicios Pseudocodigo.csproj|solutionrelative:ejercicio 7 - ejercicios pseudocodigo\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\tomic\\OneDrive\\Documentos\\GitHub\\Programacion1-tomascinturion\\E\\Ejercicio 7 - Ejercicios Pseudocodigo\\Ejercicio 7 - Ejercicios Pseudocodigo\\Program.cs",
+              "RelativeDocumentMoniker": "Ejercicio 7 - Ejercicios Pseudocodigo\\Program.cs",
+              "ToolTip": "C:\\Users\\tomic\\OneDrive\\Documentos\\GitHub\\Programacion1-tomascinturion\\E\\Ejercicio 7 - Ejercicios Pseudocodigo\\Ejercicio 7 - Ejercicios Pseudocodigo\\Program.cs",
+              "RelativeToolTip": "Ejercicio 7 - Ejercicios Pseudocodigo\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABwAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-10T22:51:51.799Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
