@@ -1,0 +1,14 @@
+C:\Users\tomic\OneDrive\Documentos\Ejercicios C#\Ejercicio 1 - Ejercicios Pseudocodigo\Ejercicio 1 - Ejercicios Pseudocodigo\obj\Debug\net8.0\Ejercicio 1 - Ejercicios Pseudocodigo.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\tomic\OneDrive\Documentos\Ejercicios C#\Ejercicio 1 - Ejercicios Pseudocodigo\Ejercicio 1 - Ejercicios Pseudocodigo\obj\Debug\net8.0\Ejercicio 1 - Ejercicios Pseudocodigo.AssemblyInfoInputs.cache
+C:\Users\tomic\OneDrive\Documentos\Ejercicios C#\Ejercicio 1 - Ejercicios Pseudocodigo\Ejercicio 1 - Ejercicios Pseudocodigo\obj\Debug\net8.0\Ejercicio 1 - Ejercicios Pseudocodigo.AssemblyInfo.cs
+C:\Users\tomic\OneDrive\Documentos\Ejercicios C#\Ejercicio 1 - Ejercicios Pseudocodigo\Ejercicio 1 - Ejercicios Pseudocodigo\obj\Debug\net8.0\Ejercicio 1 - Ejercicios Pseudocodigo.csproj.CoreCompileInputs.cache
+C:\Users\tomic\OneDrive\Documentos\Ejercicios C#\Ejercicio 1 - Ejercicios Pseudocodigo\Ejercicio 1 - Ejercicios Pseudocodigo\bin\Debug\net8.0\Ejercicio 1 - Ejercicios Pseudocodigo.exe
+C:\Users\tomic\OneDrive\Documentos\Ejercicios C#\Ejercicio 1 - Ejercicios Pseudocodigo\Ejercicio 1 - Ejercicios Pseudocodigo\bin\Debug\net8.0\Ejercicio 1 - Ejercicios Pseudocodigo.deps.json
+C:\Users\tomic\OneDrive\Documentos\Ejercicios C#\Ejercicio 1 - Ejercicios Pseudocodigo\Ejercicio 1 - Ejercicios Pseudocodigo\bin\Debug\net8.0\Ejercicio 1 - Ejercicios Pseudocodigo.runtimeconfig.json
+C:\Users\tomic\OneDrive\Documentos\Ejercicios C#\Ejercicio 1 - Ejercicios Pseudocodigo\Ejercicio 1 - Ejercicios Pseudocodigo\bin\Debug\net8.0\Ejercicio 1 - Ejercicios Pseudocodigo.dll
+C:\Users\tomic\OneDrive\Documentos\Ejercicios C#\Ejercicio 1 - Ejercicios Pseudocodigo\Ejercicio 1 - Ejercicios Pseudocodigo\bin\Debug\net8.0\Ejercicio 1 - Ejercicios Pseudocodigo.pdb
+C:\Users\tomic\OneDrive\Documentos\Ejercicios C#\Ejercicio 1 - Ejercicios Pseudocodigo\Ejercicio 1 - Ejercicios Pseudocodigo\obj\Debug\net8.0\Ejercicio 1 - Ejercicios Pseudocodigo.dll
+C:\Users\tomic\OneDrive\Documentos\Ejercicios C#\Ejercicio 1 - Ejercicios Pseudocodigo\Ejercicio 1 - Ejercicios Pseudocodigo\obj\Debug\net8.0\refint\Ejercicio 1 - Ejercicios Pseudocodigo.dll
+C:\Users\tomic\OneDrive\Documentos\Ejercicios C#\Ejercicio 1 - Ejercicios Pseudocodigo\Ejercicio 1 - Ejercicios Pseudocodigo\obj\Debug\net8.0\Ejercicio 1 - Ejercicios Pseudocodigo.pdb
+C:\Users\tomic\OneDrive\Documentos\Ejercicios C#\Ejercicio 1 - Ejercicios Pseudocodigo\Ejercicio 1 - Ejercicios Pseudocodigo\obj\Debug\net8.0\Ejercicio 1 - Ejercicios Pseudocodigo.genruntimeconfig.cache
+C:\Users\tomic\OneDrive\Documentos\Ejercicios C#\Ejercicio 1 - Ejercicios Pseudocodigo\Ejercicio 1 - Ejercicios Pseudocodigo\obj\Debug\net8.0\ref\Ejercicio 1 - Ejercicios Pseudocodigo.dll

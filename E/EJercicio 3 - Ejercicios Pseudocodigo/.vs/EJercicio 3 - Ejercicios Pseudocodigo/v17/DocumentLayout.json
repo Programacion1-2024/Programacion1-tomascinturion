@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\tomic\\OneDrive\\Documentos\\GitHub\\Programacion-1-Tomas-Cinturion-2024\\E\\EJercicio 3 - Ejercicios Pseudocodigo\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{B1B93052-63FF-42AC-81CB-67DF0708AC7B}|EJercicio 3 - Ejercicios Pseudocodigo\\EJercicio 3 - Ejercicios Pseudocodigo.csproj|c:\\users\\tomic\\onedrive\\documentos\\github\\programacion-1-tomas-cinturion-2024\\e\\ejercicio 3 - ejercicios pseudocodigo\\ejercicio 3 - ejercicios pseudocodigo\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B1B93052-63FF-42AC-81CB-67DF0708AC7B}|EJercicio 3 - Ejercicios Pseudocodigo\\EJercicio 3 - Ejercicios Pseudocodigo.csproj|solutionrelative:ejercicio 3 - ejercicios pseudocodigo\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\tomic\\OneDrive\\Documentos\\GitHub\\Programacion-1-Tomas-Cinturion-2024\\E\\EJercicio 3 - Ejercicios Pseudocodigo\\EJercicio 3 - Ejercicios Pseudocodigo\\Program.cs",
+              "RelativeDocumentMoniker": "EJercicio 3 - Ejercicios Pseudocodigo\\Program.cs",
+              "ToolTip": "C:\\Users\\tomic\\OneDrive\\Documentos\\GitHub\\Programacion-1-Tomas-Cinturion-2024\\E\\EJercicio 3 - Ejercicios Pseudocodigo\\EJercicio 3 - Ejercicios Pseudocodigo\\Program.cs",
+              "RelativeToolTip": "EJercicio 3 - Ejercicios Pseudocodigo\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAApAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-09T21:02:26.46Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
