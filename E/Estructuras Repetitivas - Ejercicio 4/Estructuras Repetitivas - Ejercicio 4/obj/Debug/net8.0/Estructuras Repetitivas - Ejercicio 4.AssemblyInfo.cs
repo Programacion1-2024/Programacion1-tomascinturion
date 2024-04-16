@@ -11,12 +11,12 @@
 using System;
 using System.Reflection;
 
-[assembly: System.Reflection.AssemblyCompanyAttribute("Estructuras Repetitivas - Ejercicio 3")]
+[assembly: System.Reflection.AssemblyCompanyAttribute("Estructuras Repetitivas - Ejercicio 4")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
 [assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+25f2e83f4379c3894e2d14e438dc5df96e0cf19f")]
-[assembly: System.Reflection.AssemblyProductAttribute("Estructuras Repetitivas - Ejercicio 3")]
-[assembly: System.Reflection.AssemblyTitleAttribute("Estructuras Repetitivas - Ejercicio 3")]
+[assembly: System.Reflection.AssemblyProductAttribute("Estructuras Repetitivas - Ejercicio 4")]
+[assembly: System.Reflection.AssemblyTitleAttribute("Estructuras Repetitivas - Ejercicio 4")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
 
 // Generado por la clase WriteCodeFragment de MSBuild.
