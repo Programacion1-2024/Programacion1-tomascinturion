@@ -10,7 +10,7 @@ for (int i = 0; i <= 4 ; i++)
     if (float.TryParse( Console.ReadLine(),out float cost))
     {
         Console.Write($"Ingrese la cantidad comprada del producto {i}: ");
-        if(float.TryParse( Console.ReadLine(),out float cant))
+        if(int.TryParse( Console.ReadLine(),out int cant))
         {
             factura += (cost * cant);
             

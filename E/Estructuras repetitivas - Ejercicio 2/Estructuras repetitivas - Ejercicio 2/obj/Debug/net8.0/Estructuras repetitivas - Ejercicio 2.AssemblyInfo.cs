@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Estructuras repetitivas - Ejercicio 2")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+53bb329690fa35878b65f5090cd448f61968a617")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+02cdb28a6c52f37440fca79486212db25e222cf5")]
 [assembly: System.Reflection.AssemblyProductAttribute("Estructuras repetitivas - Ejercicio 2")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Estructuras repetitivas - Ejercicio 2")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
