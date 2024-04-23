@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\tomic\\OneDrive\\Documentos\\GitHub\\Programacion1-tomascinturion\\E\\Estructura DoWhile - Ejercicio 2\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{B2C7628D-7F65-43DB-8DA1-C5E1D3985DBF}|Estructura DoWhile - Ejercicio 2\\Estructura DoWhile - Ejercicio 2.csproj|c:\\users\\tomic\\onedrive\\documentos\\github\\programacion1-tomascinturion\\e\\estructura dowhile - ejercicio 2\\estructura dowhile - ejercicio 2\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B2C7628D-7F65-43DB-8DA1-C5E1D3985DBF}|Estructura DoWhile - Ejercicio 2\\Estructura DoWhile - Ejercicio 2.csproj|solutionrelative:estructura dowhile - ejercicio 2\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\tomic\\OneDrive\\Documentos\\GitHub\\Programacion1-tomascinturion\\E\\Estructura DoWhile - Ejercicio 2\\Estructura DoWhile - Ejercicio 2\\Program.cs",
+              "RelativeDocumentMoniker": "Estructura DoWhile - Ejercicio 2\\Program.cs",
+              "ToolTip": "C:\\Users\\tomic\\OneDrive\\Documentos\\GitHub\\Programacion1-tomascinturion\\E\\Estructura DoWhile - Ejercicio 2\\Estructura DoWhile - Ejercicio 2\\Program.cs",
+              "RelativeToolTip": "Estructura DoWhile - Ejercicio 2\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAATAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-23T21:28:39.766Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
