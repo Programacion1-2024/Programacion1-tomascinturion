@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Estructura While - Ejercicio 4")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ccd001cf9252d731a6cc92d9af28d747eee6e7ec")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+94a93f9e67ad803e79bcb392507068c60b7325e5")]
 [assembly: System.Reflection.AssemblyProductAttribute("Estructura While - Ejercicio 4")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Estructura While - Ejercicio 4")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

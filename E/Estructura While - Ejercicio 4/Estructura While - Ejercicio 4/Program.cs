@@ -4,15 +4,18 @@ using System;
 float cost = 1;
 int cant = 0;
 float factura = 0;
+int i = 1;
+Console.WriteLine("La lista finalizara al ingresar 0");
 while (cost > 0)
 {
-    Console.Write("Ingrese el costo unitario: ");
+    Console.Write($"Ingrese el costo unitario {i}: ");
     if (float.TryParse(Console.ReadLine(), out cost))
     {
-        Console.Write("Ingrese la cantidad comprada: ");
+        Console.Write($"Ingrese la cantidad comprada {i}: ");
         if (int.TryParse(Console.ReadLine(),out cant))
         {
             factura += (cost * cant);
+            i += 1;
         }
         else
         {
