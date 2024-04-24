@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "Estructura DoWhile - Ejercicio 3/1.0.0": {
+        "runtime": {
+          "Estructura DoWhile - Ejercicio 3.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Estructura DoWhile - Ejercicio 3/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
