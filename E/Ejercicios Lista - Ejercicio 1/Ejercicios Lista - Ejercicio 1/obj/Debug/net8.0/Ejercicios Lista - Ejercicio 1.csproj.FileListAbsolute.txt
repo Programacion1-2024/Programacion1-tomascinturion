@@ -1,0 +1,15 @@
+C:\Users\tomic\OneDrive\Documentos\GitHub\Programacion1-tomascinturion\E\Ejercicios Lista - Ejercicio 1\Ejercicios Lista - Ejercicio 1\bin\Debug\net8.0\Ejercicios Lista - Ejercicio 1.exe
+C:\Users\tomic\OneDrive\Documentos\GitHub\Programacion1-tomascinturion\E\Ejercicios Lista - Ejercicio 1\Ejercicios Lista - Ejercicio 1\bin\Debug\net8.0\Ejercicios Lista - Ejercicio 1.deps.json
+C:\Users\tomic\OneDrive\Documentos\GitHub\Programacion1-tomascinturion\E\Ejercicios Lista - Ejercicio 1\Ejercicios Lista - Ejercicio 1\bin\Debug\net8.0\Ejercicios Lista - Ejercicio 1.runtimeconfig.json
+C:\Users\tomic\OneDrive\Documentos\GitHub\Programacion1-tomascinturion\E\Ejercicios Lista - Ejercicio 1\Ejercicios Lista - Ejercicio 1\bin\Debug\net8.0\Ejercicios Lista - Ejercicio 1.dll
+C:\Users\tomic\OneDrive\Documentos\GitHub\Programacion1-tomascinturion\E\Ejercicios Lista - Ejercicio 1\Ejercicios Lista - Ejercicio 1\bin\Debug\net8.0\Ejercicios Lista - Ejercicio 1.pdb
+C:\Users\tomic\OneDrive\Documentos\GitHub\Programacion1-tomascinturion\E\Ejercicios Lista - Ejercicio 1\Ejercicios Lista - Ejercicio 1\obj\Debug\net8.0\Ejercicios Lista - Ejercicio 1.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\tomic\OneDrive\Documentos\GitHub\Programacion1-tomascinturion\E\Ejercicios Lista - Ejercicio 1\Ejercicios Lista - Ejercicio 1\obj\Debug\net8.0\Ejercicios Lista - Ejercicio 1.AssemblyInfoInputs.cache
+C:\Users\tomic\OneDrive\Documentos\GitHub\Programacion1-tomascinturion\E\Ejercicios Lista - Ejercicio 1\Ejercicios Lista - Ejercicio 1\obj\Debug\net8.0\Ejercicios Lista - Ejercicio 1.AssemblyInfo.cs
+C:\Users\tomic\OneDrive\Documentos\GitHub\Programacion1-tomascinturion\E\Ejercicios Lista - Ejercicio 1\Ejercicios Lista - Ejercicio 1\obj\Debug\net8.0\Ejercicios Lista - Ejercicio 1.csproj.CoreCompileInputs.cache
+C:\Users\tomic\OneDrive\Documentos\GitHub\Programacion1-tomascinturion\E\Ejercicios Lista - Ejercicio 1\Ejercicios Lista - Ejercicio 1\obj\Debug\net8.0\Ejercicios Lista - Ejercicio 1.sourcelink.json
+C:\Users\tomic\OneDrive\Documentos\GitHub\Programacion1-tomascinturion\E\Ejercicios Lista - Ejercicio 1\Ejercicios Lista - Ejercicio 1\obj\Debug\net8.0\Ejercicios Lista - Ejercicio 1.dll
+C:\Users\tomic\OneDrive\Documentos\GitHub\Programacion1-tomascinturion\E\Ejercicios Lista - Ejercicio 1\Ejercicios Lista - Ejercicio 1\obj\Debug\net8.0\refint\Ejercicios Lista - Ejercicio 1.dll
+C:\Users\tomic\OneDrive\Documentos\GitHub\Programacion1-tomascinturion\E\Ejercicios Lista - Ejercicio 1\Ejercicios Lista - Ejercicio 1\obj\Debug\net8.0\Ejercicios Lista - Ejercicio 1.pdb
+C:\Users\tomic\OneDrive\Documentos\GitHub\Programacion1-tomascinturion\E\Ejercicios Lista - Ejercicio 1\Ejercicios Lista - Ejercicio 1\obj\Debug\net8.0\Ejercicios Lista - Ejercicio 1.genruntimeconfig.cache
+C:\Users\tomic\OneDrive\Documentos\GitHub\Programacion1-tomascinturion\E\Ejercicios Lista - Ejercicio 1\Ejercicios Lista - Ejercicio 1\obj\Debug\net8.0\ref\Ejercicios Lista - Ejercicio 1.dll
