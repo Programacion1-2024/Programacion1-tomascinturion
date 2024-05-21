@@ -6,7 +6,7 @@ List<string> palabras = new List<string>();
 string palabra;
 do
 {
-    Console.Write("Ingresa una palabra, finaliza la carga con un lugar en blanco: ");
+    Console.Write("Ingresa una palabra, finaliza la carga con doble enter: ");
     palabra = Console.ReadLine();
     if (!string.IsNullOrEmpty(palabra))
     {

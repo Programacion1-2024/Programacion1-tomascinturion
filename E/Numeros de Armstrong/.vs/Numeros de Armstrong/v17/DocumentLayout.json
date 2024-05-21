@@ -1,0 +1,58 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\tomic\\OneDrive\\Documentos\\GitHub\\Programacion1-tomascinturion\\E\\Numeros de Armstrong\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{B7AC7A30-325E-466D-B975-77A848680877}|Numeros de Armstrong\\Numeros de Armstrong.csproj|c:\\users\\tomic\\onedrive\\documentos\\github\\programacion1-tomascinturion\\e\\numeros de armstrong\\numeros de armstrong\\ejercicio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B7AC7A30-325E-466D-B975-77A848680877}|Numeros de Armstrong\\Numeros de Armstrong.csproj|solutionrelative:numeros de armstrong\\ejercicio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B7AC7A30-325E-466D-B975-77A848680877}|Numeros de Armstrong\\Numeros de Armstrong.csproj|c:\\users\\tomic\\onedrive\\documentos\\github\\programacion1-tomascinturion\\e\\numeros de armstrong\\numeros de armstrong\\numerosdearmstrongtests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B7AC7A30-325E-466D-B975-77A848680877}|Numeros de Armstrong\\Numeros de Armstrong.csproj|solutionrelative:numeros de armstrong\\numerosdearmstrongtests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{e1b7d1f8-9b3c-49b1-8f4f-bfc63a88835d}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "NumerosDeArmstrongTests.cs",
+              "DocumentMoniker": "C:\\Users\\tomic\\OneDrive\\Documentos\\GitHub\\Programacion1-tomascinturion\\E\\Numeros de Armstrong\\Numeros de Armstrong\\NumerosDeArmstrongTests.cs",
+              "RelativeDocumentMoniker": "Numeros de Armstrong\\NumerosDeArmstrongTests.cs",
+              "ToolTip": "C:\\Users\\tomic\\OneDrive\\Documentos\\GitHub\\Programacion1-tomascinturion\\E\\Numeros de Armstrong\\Numeros de Armstrong\\NumerosDeArmstrongTests.cs",
+              "RelativeToolTip": "Numeros de Armstrong\\NumerosDeArmstrongTests.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAVAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-15T23:27:14.848Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Ejercicio.cs",
+              "DocumentMoniker": "C:\\Users\\tomic\\OneDrive\\Documentos\\GitHub\\Programacion1-tomascinturion\\E\\Numeros de Armstrong\\Numeros de Armstrong\\Ejercicio.cs",
+              "RelativeDocumentMoniker": "Numeros de Armstrong\\Ejercicio.cs",
+              "ToolTip": "C:\\Users\\tomic\\OneDrive\\Documentos\\GitHub\\Programacion1-tomascinturion\\E\\Numeros de Armstrong\\Numeros de Armstrong\\Ejercicio.cs",
+              "RelativeToolTip": "Numeros de Armstrong\\Ejercicio.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAuwB4AAABBAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-15T23:27:10.82Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -31,14 +31,7 @@
                     abc.Remove(caracteres[i]);
                 }
             }
-            if(abc.Count == 0) 
-            {
-                return true;
-            }
-            else
-            {
-                return false;
-            }
+            return (abc.Count == 0);
         }
     }
 }

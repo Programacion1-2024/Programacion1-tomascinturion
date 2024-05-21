@@ -1,0 +1,126 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\tomic\\OneDrive\\Documentos\\GitHub\\Programacion1-tomascinturion\\E\\Ejemplo Command\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{6F24C512-2D24-438F-985F-665806B17EFE}|Ejemplo Command\\Ejemplo Command.csproj|c:\\users\\tomic\\onedrive\\documentos\\github\\programacion1-tomascinturion\\e\\ejemplo command\\ejemplo command\\icommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6F24C512-2D24-438F-985F-665806B17EFE}|Ejemplo Command\\Ejemplo Command.csproj|solutionrelative:ejemplo command\\icommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6F24C512-2D24-438F-985F-665806B17EFE}|Ejemplo Command\\Ejemplo Command.csproj|c:\\users\\tomic\\onedrive\\documentos\\github\\programacion1-tomascinturion\\e\\ejemplo command\\ejemplo command\\invoker.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6F24C512-2D24-438F-985F-665806B17EFE}|Ejemplo Command\\Ejemplo Command.csproj|solutionrelative:ejemplo command\\invoker.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6F24C512-2D24-438F-985F-665806B17EFE}|Ejemplo Command\\Ejemplo Command.csproj|c:\\users\\tomic\\onedrive\\documentos\\github\\programacion1-tomascinturion\\e\\ejemplo command\\ejemplo command\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6F24C512-2D24-438F-985F-665806B17EFE}|Ejemplo Command\\Ejemplo Command.csproj|solutionrelative:ejemplo command\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6F24C512-2D24-438F-985F-665806B17EFE}|Ejemplo Command\\Ejemplo Command.csproj|c:\\users\\tomic\\onedrive\\documentos\\github\\programacion1-tomascinturion\\e\\ejemplo command\\ejemplo command\\complexcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6F24C512-2D24-438F-985F-665806B17EFE}|Ejemplo Command\\Ejemplo Command.csproj|solutionrelative:ejemplo command\\complexcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6F24C512-2D24-438F-985F-665806B17EFE}|Ejemplo Command\\Ejemplo Command.csproj|c:\\users\\tomic\\onedrive\\documentos\\github\\programacion1-tomascinturion\\e\\ejemplo command\\ejemplo command\\simplecommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6F24C512-2D24-438F-985F-665806B17EFE}|Ejemplo Command\\Ejemplo Command.csproj|solutionrelative:ejemplo command\\simplecommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6F24C512-2D24-438F-985F-665806B17EFE}|Ejemplo Command\\Ejemplo Command.csproj|c:\\users\\tomic\\onedrive\\documentos\\github\\programacion1-tomascinturion\\e\\ejemplo command\\ejemplo command\\receiver.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6F24C512-2D24-438F-985F-665806B17EFE}|Ejemplo Command\\Ejemplo Command.csproj|solutionrelative:ejemplo command\\receiver.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 4,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Invoker.cs",
+              "DocumentMoniker": "C:\\Users\\tomic\\OneDrive\\Documentos\\GitHub\\Programacion1-tomascinturion\\E\\Ejemplo Command\\Ejemplo Command\\Invoker.cs",
+              "RelativeDocumentMoniker": "Ejemplo Command\\Invoker.cs",
+              "ToolTip": "C:\\Users\\tomic\\OneDrive\\Documentos\\GitHub\\Programacion1-tomascinturion\\E\\Ejemplo Command\\Ejemplo Command\\Invoker.cs",
+              "RelativeToolTip": "Ejemplo Command\\Invoker.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAlAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-10T21:43:47.079Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Receiver.cs",
+              "DocumentMoniker": "C:\\Users\\tomic\\OneDrive\\Documentos\\GitHub\\Programacion1-tomascinturion\\E\\Ejemplo Command\\Ejemplo Command\\Receiver.cs",
+              "RelativeDocumentMoniker": "Ejemplo Command\\Receiver.cs",
+              "ToolTip": "C:\\Users\\tomic\\OneDrive\\Documentos\\GitHub\\Programacion1-tomascinturion\\E\\Ejemplo Command\\Ejemplo Command\\Receiver.cs",
+              "RelativeToolTip": "Ejemplo Command\\Receiver.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAmAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-10T21:43:06.436Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ComplexCommand.cs",
+              "DocumentMoniker": "C:\\Users\\tomic\\OneDrive\\Documentos\\GitHub\\Programacion1-tomascinturion\\E\\Ejemplo Command\\Ejemplo Command\\ComplexCommand.cs",
+              "RelativeDocumentMoniker": "Ejemplo Command\\ComplexCommand.cs",
+              "ToolTip": "C:\\Users\\tomic\\OneDrive\\Documentos\\GitHub\\Programacion1-tomascinturion\\E\\Ejemplo Command\\Ejemplo Command\\ComplexCommand.cs",
+              "RelativeToolTip": "Ejemplo Command\\ComplexCommand.cs",
+              "ViewState": "AQIAAA4AAAAAAAAAAAAAwCAAAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-10T21:41:08.42Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "SimpleCommand.cs",
+              "DocumentMoniker": "C:\\Users\\tomic\\OneDrive\\Documentos\\GitHub\\Programacion1-tomascinturion\\E\\Ejemplo Command\\Ejemplo Command\\SimpleCommand.cs",
+              "RelativeDocumentMoniker": "Ejemplo Command\\SimpleCommand.cs",
+              "ToolTip": "C:\\Users\\tomic\\OneDrive\\Documentos\\GitHub\\Programacion1-tomascinturion\\E\\Ejemplo Command\\Ejemplo Command\\SimpleCommand.cs",
+              "RelativeToolTip": "Ejemplo Command\\SimpleCommand.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAoAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-10T21:36:40.474Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ICommand.cs",
+              "DocumentMoniker": "C:\\Users\\tomic\\OneDrive\\Documentos\\GitHub\\Programacion1-tomascinturion\\E\\Ejemplo Command\\Ejemplo Command\\ICommand.cs",
+              "RelativeDocumentMoniker": "Ejemplo Command\\ICommand.cs",
+              "ToolTip": "C:\\Users\\tomic\\OneDrive\\Documentos\\GitHub\\Programacion1-tomascinturion\\E\\Ejemplo Command\\Ejemplo Command\\ICommand.cs",
+              "RelativeToolTip": "Ejemplo Command\\ICommand.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-10T21:35:20.435Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\tomic\\OneDrive\\Documentos\\GitHub\\Programacion1-tomascinturion\\E\\Ejemplo Command\\Ejemplo Command\\Program.cs",
+              "RelativeDocumentMoniker": "Ejemplo Command\\Program.cs",
+              "ToolTip": "C:\\Users\\tomic\\OneDrive\\Documentos\\GitHub\\Programacion1-tomascinturion\\E\\Ejemplo Command\\Ejemplo Command\\Program.cs",
+              "RelativeToolTip": "Ejemplo Command\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-10T21:33:44.617Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{e1b7d1f8-9b3c-49b1-8f4f-bfc63a88835d}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

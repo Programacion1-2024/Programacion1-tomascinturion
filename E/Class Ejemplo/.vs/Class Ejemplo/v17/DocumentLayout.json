@@ -1,0 +1,41 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\tomic\\OneDrive\\Documentos\\GitHub\\Programacion1-tomascinturion\\E\\Class Ejemplo\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{BD5FFFDC-9B1F-4FF8-A423-3BE07228C4C9}|Class Ejemplo\\Class Ejemplo.csproj|c:\\users\\tomic\\onedrive\\documentos\\github\\programacion1-tomascinturion\\e\\class ejemplo\\class ejemplo\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BD5FFFDC-9B1F-4FF8-A423-3BE07228C4C9}|Class Ejemplo\\Class Ejemplo.csproj|solutionrelative:class ejemplo\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 112,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{e1b7d1f8-9b3c-49b1-8f4f-bfc63a88835d}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\tomic\\OneDrive\\Documentos\\GitHub\\Programacion1-tomascinturion\\E\\Class Ejemplo\\Class Ejemplo\\Program.cs",
+              "RelativeDocumentMoniker": "Class Ejemplo\\Program.cs",
+              "ToolTip": "C:\\Users\\tomic\\OneDrive\\Documentos\\GitHub\\Programacion1-tomascinturion\\E\\Class Ejemplo\\Class Ejemplo\\Program.cs",
+              "RelativeToolTip": "Class Ejemplo\\Program.cs",
+              "ViewState": "AQIAABMAAAAAAAAAAAA7wCUAAABBAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-14T22:00:44.832Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
