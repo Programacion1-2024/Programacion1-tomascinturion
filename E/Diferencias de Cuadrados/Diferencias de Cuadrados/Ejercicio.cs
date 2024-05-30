@@ -22,17 +22,29 @@
     {
         public static int CalculateSquareOfSum(int max)
         {
-            throw new NotImplementedException("You need to implement this function.");
+            int sum = Enumerable.Range(1, max).Sum();
+            int elev = (int)Math.Pow(sum, 2);
+            return elev;
         }
 
         public static int CalculateSumOfSquares(int max)
         {
-            throw new NotImplementedException("You need to implement this function.");
+            int sumaCuadrados = 0;
+
+            for (int i = 1; i <= max; i++)
+            {
+                sumaCuadrados += (int)Math.Pow(i, 2);
+            }
+
+            return sumaCuadrados;
         }
 
         public static int CalculateDifferenceOfSquares(int max)
         {
-            throw new NotImplementedException("You need to implement this function.");
+            int result = CalculateSquareOfSum(max) - CalculateSumOfSquares(max);
+            return result;
+            
+
         }
     }
 }

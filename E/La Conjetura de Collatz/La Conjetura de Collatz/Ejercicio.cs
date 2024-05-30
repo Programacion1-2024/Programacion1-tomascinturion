@@ -36,7 +36,32 @@ namespace La_Conjetura_de_Collatz
     {
         public static int Steps(int number)
         {
-            throw new NotImplementedException("You need to implement this function");
+            int i = 0;
+            do
+            {
+                if(number <= 0)
+                {
+                    throw new ArgumentOutOfRangeException();
+                }
+                if(number == 1)
+                {
+                    return 0;
+                }
+                if(number % 2 == 0) 
+                {
+                    number = number / 2;
+                    i++;
+                }
+                else
+                {
+                    number = (number * 3) + 1;
+                    i++;
+                }
+                
+            }
+            while (number != 1);
+            return i;
+            
         }
     }
 }
