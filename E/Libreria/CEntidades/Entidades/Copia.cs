@@ -12,5 +12,7 @@ namespace CEntidades.Entidades
 
         public double Precio { get; set; }
         public int Cantidad { get; set; } 
+        public Libro Libro { get; set; }
+        public ICollection<Prestamo> Prestamos { get; set; }
     }
 }

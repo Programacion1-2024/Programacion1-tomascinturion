@@ -11,5 +11,7 @@ namespace CEntidades.Entidades
         public int IdVenta { get; set; }
 
         public DateTime Fecha { get; set; }
+        public Cliente Cliente { get; set; }
+        public FormaPago FormaPago { get; set; }
     }
 }
