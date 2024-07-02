@@ -18,8 +18,12 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 2,
           "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{e1b7d1f8-9b3c-49b1-8f4f-bfc63a88835d}"
+            },
             {
               "$type": "Document",
               "DocumentIndex": 1,
@@ -30,8 +34,7 @@
               "RelativeToolTip": "Niveles de registro\\NivelesDeRegistroTests.cs",
               "ViewState": "AQIAACgAAAAAAAAAAAAtwCMAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-21T19:45:23.13Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-21T19:45:23.13Z"
             },
             {
               "$type": "Document",
@@ -41,14 +44,10 @@
               "RelativeDocumentMoniker": "Niveles de registro\\Ejercicio.cs",
               "ToolTip": "C:\\Users\\tomic\\OneDrive\\Documentos\\GitHub\\Programacion1-tomascinturion\\E\\Niveles de registro\\Niveles de registro\\Ejercicio.cs",
               "RelativeToolTip": "Niveles de registro\\Ejercicio.cs",
-              "ViewState": "AQIAACMAAAAAAAAAAAAAwD4AAAAAAAAA",
+              "ViewState": "AQIAAB4AAAAAAAAAAAAAAD4AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-21T19:45:18.988Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{e1b7d1f8-9b3c-49b1-8f4f-bfc63a88835d}"
             }
           ]
         }
