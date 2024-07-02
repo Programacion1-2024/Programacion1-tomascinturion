@@ -12,6 +12,7 @@ namespace CEntidades.Entidades
         public DateTime FechaNacimiento { get; set; }
         public string Biografia { get; set; }
         public string Nacionalidad { get; set; }
+        public ICollection<Libro> Libros {  get; set; } 
         public Persona PersonaAutor { get; set; }
     }
 }

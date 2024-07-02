@@ -17,5 +17,7 @@ namespace CEntidades.Entidades
         public string Telefono { get; set; }
         public string Nacionalidad { get; set; }
         public string Email { get; set; }
+        public Autor? Autor { get; set; }
+        public Cliente? Cliente { get; set; }
     }
 }
