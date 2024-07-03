@@ -9,9 +9,10 @@
         public string Descripcion { get; set; }
         public float Precio { get; set; }
         public DateTime FechaPublicacion { get; set; }
+        public Editorial Editorial { get; set; }
         public ICollection<Autor> Autores { get; set; }
         public ICollection<Genero> Generos { get; set; }
         public ICollection<Copia> Copias { get; set; }
-        public Editorial Editorial { get; set; }
+        public ICollection<Venta> Ventas { get; set; }  
     }
 }

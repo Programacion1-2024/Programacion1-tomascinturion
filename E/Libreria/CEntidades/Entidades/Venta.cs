@@ -13,5 +13,7 @@ namespace CEntidades.Entidades
         public DateTime Fecha { get; set; }
         public Cliente Cliente { get; set; }
         public FormaPago FormaPago { get; set; }
+        public Empleado Empleado { get; set; }
+        public Libro Libro { get; set; }
     }
 }

@@ -16,6 +16,7 @@ namespace CEntidades.Entidades
         public Cliente Cliente { get; set; }
         public Copia Copia { get; set; }
         public FormaPago FormaPago { get; set; }
+        public Empleado Empleado { get; set; }
 
     }
 }

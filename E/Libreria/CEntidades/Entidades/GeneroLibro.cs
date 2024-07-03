@@ -9,7 +9,7 @@ namespace CEntidades.Entidades
     public class GeneroLibro
     {
         public int IdGenereoLibro { get; set; }
-        public Libro IdLibro { get; set; }
-        public Genero IdGenero { get; set; }
+        public int IdLibro { get; set; }
+        public int IdGenero { get; set; }
     }
 }

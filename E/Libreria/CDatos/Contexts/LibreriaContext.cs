@@ -38,14 +38,7 @@ namespace CDatos.Contexts
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            modelBuilder.HasAnnotation("Relational:Collation", "en_US.UTF-8");
-
-            modelBuilder.Entity<Libro>(entity =>
-            {
-                entity.HasKey(e => e.IdLibro)
-                    .HasName("PK_ID_LIBRO");
-            });
-            
+            modelBuilder.HasAnnotation("Relational:Collation", "en_US.UTF-8");    
             modelBuilder.Entity<Autor>(entity =>
             {
                 entity.HasKey(e => e.IdAutor)
@@ -101,6 +94,15 @@ namespace CDatos.Contexts
             {
                 entity.HasKey(e => e.IdEmpleado)
                     .HasName("PK_ID_EMPLEADO");
+
+                entity.HasMany(e => e.Ventas)
+                   .WithOne(e => e.Empleado)
+                   .HasForeignKey("IdEmpleado")
+                   .IsRequired();
+                entity.HasMany(e => e.Prestamos)
+                   .WithOne(e => e.Empleado)
+                   .HasForeignKey("IdEmpleado")
+                   .IsRequired();
             });
 
             modelBuilder.Entity<FormaPago>(entity =>
@@ -137,6 +139,10 @@ namespace CDatos.Contexts
                     .HasName("PK_ID_LIBRO");
 
                 entity.HasMany(e => e.Copias)
+                    .WithOne(e => e.Libro)
+                    .HasForeignKey("IdLibro")
+                    .IsRequired();
+                entity.HasMany(e => e.Ventas)
                     .WithOne(e => e.Libro)
                     .HasForeignKey("IdLibro")
                     .IsRequired();

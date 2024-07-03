@@ -9,7 +9,8 @@ namespace CEntidades.Entidades
     public class AutorLibro
     {
         public int IdAutorLibro { get; set; }
-        public Autor IdAutor { get; set; }
-        public Libro IdLibro { get; set; }
+        public int IdAutor { get; set; }
+        public int IdLibro { get; set; }
     }
 }
+  
