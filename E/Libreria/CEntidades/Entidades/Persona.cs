@@ -11,7 +11,8 @@ namespace CEntidades.Entidades
     {
         public int IdPersona { get; set; }
 
-        public long DNIPersona { get; set; }
+        public long Documento { get; set; }
+        public long TipoDocumento { get; set; }
         public string Nombre { get; set; }
         public string Apellido { get; set;}
         public string Telefono { get; set; }
