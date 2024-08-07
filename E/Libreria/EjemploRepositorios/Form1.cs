@@ -5,17 +5,17 @@ namespace EjemploRepositorios
 {
     public partial class Form1 : Form
     {
-        private IAutorLogic _autorLogic;
+        private IAutorLogic _PersonaLogic;
 
-        public Form1(IAutorLogic autorLogic)
+        public Form1(IAutorLogic PersonaLogic)
         {
-            _autorLogic = autorLogic;
+            _PersonaLogic = PersonaLogic;
             InitializeComponent();
         }
 
         private async void Form1_Load(object sender, EventArgs e)
         {
-            List<Autor> autors = await _autorLogic.GetAll();
+            List<Autor> Personas = await _PersonaLogic.GetAll();
         }
     }
 }

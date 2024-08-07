@@ -6,16 +6,16 @@ namespace CLogica.Implementations
 {
     public class AutorLogic : IAutorLogic
     {
-        private IAutorRepository _autorRepository;
+        private IAutorRepository _PersonaRepository;
 
-        public AutorLogic(IAutorRepository autorRepository)
+        public AutorLogic(IAutorRepository PersonaRepository)
         {
-            _autorRepository = autorRepository;
+            _PersonaRepository = PersonaRepository;
         }
 
         public async Task<List<Autor>> GetAll()
         {
-            return await _autorRepository.GetAll();
+            return await _PersonaRepository.GetAll();
         }
     }
 }
