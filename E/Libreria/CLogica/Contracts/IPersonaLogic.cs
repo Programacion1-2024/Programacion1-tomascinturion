@@ -11,5 +11,6 @@ namespace CLogica.Contracts
     {
         void AltaPersona(Persona persona);
         void ActualizacionPersona(string documento, Persona personaActualuzada);
+        void EliminarPersona(string documento);
     }
 }

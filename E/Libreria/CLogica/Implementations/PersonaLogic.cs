@@ -16,7 +16,7 @@ namespace CLogica.Implementations
         {
             _personaRepository = personaRepository;
         }
-            public void AltaPersona(Persona personaNueva)
+        public void AltaPersona(Persona personaNueva)
         {
             List<String> camposinvalidos = new List<string>();
 
@@ -26,7 +26,7 @@ namespace CLogica.Implementations
             if (string.IsNullOrEmpty(personaNueva.Apellido) || !IsValidName(personaNueva.Apellido))
                 throw new ArgumentException("Apellido inválido");
 
-            if (string.IsNullOrEmpty(personaNueva.Documento) || !IsValidDocumento(personaNueva.Documento))
+            if (string.IsNullOrEmpty(personaNueva.Documento) || !IsValidDocumento(personaNueva.Documento) || _personaRepository.FindByCondition(p => p.Documento == personaNueva.Documento).Count() != 0)
                 throw new ArgumentException("Documento inválido");
 
             if (string.IsNullOrEmpty(personaNueva.Telefono) || !IsValidTelefono(personaNueva.Telefono))
@@ -65,25 +65,58 @@ namespace CLogica.Implementations
         }
         public void ActualizacionPersona(string documento, Persona personaActualizada)
         {
+            List<String> camposinvalidos = new List<string>();
+
+            if (string.IsNullOrEmpty(personaActualizada.Nombre) || !IsValidName(personaActualizada.Nombre))
+                throw new ArgumentException("Nombre inválido");
+
+            if (string.IsNullOrEmpty(personaActualizada.Apellido) || !IsValidName(personaActualizada.Apellido))
+                throw new ArgumentException("Apellido inválido");
+
+            if (string.IsNullOrEmpty(personaActualizada.Telefono) || !IsValidTelefono(personaActualizada.Telefono))
+                throw new ArgumentException("Teléfono inválido");
+
+            if (string.IsNullOrEmpty(personaActualizada.Email) || !IsValidEmail(personaActualizada.Email))
+                throw new ArgumentException("Email inválido");
+
+            if (camposinvalidos.Count > 0)
+            {
+                throw new ArgumentException();
+            }
+
             if (string.IsNullOrEmpty(documento) || !IsValidDocumento(documento))
-                throw new ArgumentException( "El documento ingresado es invalido.");
+                throw new ArgumentException("El documento ingresado es invalido.");
+
             Persona? persona = _personaRepository.FindByCondition(p => p.Documento == documento).FirstOrDefault();
+
             if(persona == null)
             {
                 throw new ArgumentNullException("No se ha encontrado una persona con ese documento");
-                persona.Nombre = personaActualizada.Nombre;
-                persona.Apellido = personaActualizada.Apellido;
-                persona.Telefono = personaActualizada.Telefono;
-                persona.Documento = personaActualizada.Documento;
-                persona.Email = personaActualizada.Documento;
-                _personaRepository.Save()//por terminar
             }
+            persona.Nombre = personaActualizada.Nombre;
+            persona.Apellido = personaActualizada.Apellido;
+            persona.Telefono = personaActualizada.Telefono;
+            persona.Documento = personaActualizada.Documento;
+            persona.Email = personaActualizada.Documento;
+            _personaRepository.Update(persona);
+            _personaRepository.Save();
         }
-        public void EliminarPersona(Persona persona)
+        public void EliminarPersona(string documento)
         {
+            if (string.IsNullOrEmpty(documento) || !IsValidDocumento(documento))
+                throw new ArgumentException("El documento ingresado es invalido.");
+
+            Persona? persona = _personaRepository.FindByCondition(p => p.Documento == documento).FirstOrDefault();
+
+            if (persona == null)
+            {
+                throw new ArgumentNullException("No se ha encontrado una persona con ese documento");
+            }
+
             _personaRepository.Delete(persona);
             _personaRepository.Save();
         }
+        #region validaciones
         public bool ContieneCaracter(string text)
         {
             char[] caracteres = { '!', '"', '#', '$', '%', '&', '/', '(', ')', '=', '.', ',', };
@@ -96,7 +129,7 @@ namespace CLogica.Implementations
 
         private bool IsValidDocumento(string documento)
         {
-            return documento.Length != 8 && ContieneCaracter(documento);
+            return documento.Length == 8 && documento.All(c => Char.IsNumber(c));
         }
 
         private bool IsValidTelefono(string telefono)
@@ -108,5 +141,6 @@ namespace CLogica.Implementations
         {
             return email.Contains('@') && ContieneCaracter(email);
         }
+        #endregion validaciones
     }
 }
