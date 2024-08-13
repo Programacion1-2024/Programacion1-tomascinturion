@@ -85,7 +85,9 @@ namespace CLogica.Implementations
             }
 
             if (string.IsNullOrEmpty(documento) || !IsValidDocumento(documento))
+            {
                 throw new ArgumentException("El documento ingresado es invalido.");
+            }
 
             Persona? persona = _personaRepository.FindByCondition(p => p.Documento == documento).FirstOrDefault();
 
@@ -97,7 +99,7 @@ namespace CLogica.Implementations
             persona.Apellido = personaActualizada.Apellido;
             persona.Telefono = personaActualizada.Telefono;
             persona.Documento = personaActualizada.Documento;
-            persona.Email = personaActualizada.Documento;
+            persona.Email = personaActualizada.Email;
             _personaRepository.Update(persona);
             _personaRepository.Save();
         }
