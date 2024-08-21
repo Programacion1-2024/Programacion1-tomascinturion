@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace CLogica.Contracts
 {
-    internal interface IPersonaLogic
+    public interface IPersonaLogic
     {
         void AltaPersona(Persona persona);
         void ActualizacionPersona(string documento, Persona personaActualuzada);

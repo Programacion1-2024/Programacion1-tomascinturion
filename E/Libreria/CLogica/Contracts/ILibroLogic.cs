@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace CLogica.Contracts
 {
-    internal interface ILibroLogic
+    public interface ILibroLogic
     {
     }
 }

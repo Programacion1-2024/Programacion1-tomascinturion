@@ -81,7 +81,7 @@ namespace CLogica.Implementations
 
             if (camposinvalidos.Count > 0)
             {
-                throw new ArgumentException();
+                throw new ArgumentException();         
             }
 
             if (string.IsNullOrEmpty(documento) || !IsValidDocumento(documento))

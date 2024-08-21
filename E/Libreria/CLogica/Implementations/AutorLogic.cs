@@ -6,16 +6,16 @@ namespace CLogica.Implementations
 {
     public class AutorLogic : IAutorLogic
     {
-        private IAutorRepository _PersonaRepository;
+        private IAutorRepository _autorRepository;
 
-        public AutorLogic(IAutorRepository PersonaRepository)
+        public AutorLogic(IAutorRepository autorRepository)
         {
-            _PersonaRepository = PersonaRepository;
+            _autorRepository = autorRepository;
         }
 
         public async Task<List<Autor>> GetAll()
         {
-            return await _PersonaRepository.GetAll();
+            return await _autorRepository.GetAll();
         }
 
         public void AltaAutor(Autor autorNuevo) 
@@ -24,6 +24,14 @@ namespace CLogica.Implementations
             {
                 throw new ArgumentException("La biografia no es valida");
             }
+            Autor autor = new Autor();
+            autor.PersonaAutor = autorNuevo.PersonaAutor;
+            autor.Biografia = autorNuevo.Biografia;
+            autor.FechaNacimiento = autorNuevo.FechaNacimiento;
+            autor.Libros = autorNuevo.Libros;  
+
+            _autorRepository.Create(autor);
+            _autorRepository.Save();
         }
         public void ActualizarAutor(string documento, Autor autorActualizado)
         {
@@ -36,7 +44,7 @@ namespace CLogica.Implementations
                 throw new ArgumentException("El documento ingresado es invalido.");
             }
 
-            Autor? autor = _PersonaRepository.FindByCondition(p => p.Documento == documento).FirstOrDefault();
+            Autor? autor = _autorRepository.FindByCondition(p => p.PersonaAutor.Documento == documento).FirstOrDefault();
 
             if (autor == null)
             {
@@ -44,8 +52,9 @@ namespace CLogica.Implementations
             }
 
             autor.Biografia = autorActualizado.Biografia;
-            _PersonaRepository.Update(autor);
-            _PersonaRepository.Save();
+            autor.Libros = autorActualizado.Libros;
+            _autorRepository.Update(autor);
+            _autorRepository.Save();
 
         }
         public void EliminarAutor(string documento)
@@ -53,15 +62,15 @@ namespace CLogica.Implementations
             if (string.IsNullOrEmpty(documento) || !IsValidDocumento(documento))
                 throw new ArgumentException("El documento ingresado es invalido.");
 
-            Autor? autor = _PersonaRepository.FindByCondition(p => p.Documento == documento).FirstOrDefault();
+            Autor? autor = _autorRepository.FindByCondition(p => p.PersonaAutor.Documento == documento).FirstOrDefault();
 
             if (autor == null)
             {
                 throw new ArgumentNullException("No se ha encontrado un autor con ese documento");
             }
 
-            _PersonaRepository.Delete(autor);
-            _PersonaRepository.Save();
+            _autorRepository.Delete(autor);
+            _autorRepository.Save();
         }
         #region Validaciones
         public bool ContieneCaracter(string text)
