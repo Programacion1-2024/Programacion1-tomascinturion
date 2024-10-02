@@ -130,9 +130,13 @@ namespace CLogica.Implementations
         {
             return _empleadoRepository.FindAll().ToList();
         }
-        public Empleado? ObtenerEmpleadoPorDNI(string idEmpleado)
+        public Empleado? ObtenerEmpleadoPorID(string idEmpleado)
         {
             return _empleadoRepository.FindByCondition(p => p.IdEmpleado == Int32.Parse(idEmpleado)).FirstOrDefault();
         }
+        public List<dynamic> ObtenerEmpleadoParaListado()
+        {
+            return _empleadoRepository.ObtenerEmpleados().Select(a => new {IdEmpleado = a.IdEmpleado, Nombre = a.PersonaEmpleado.Nombre, Apellido = a.PersonaEmpleado.Apellido, Nacionalidad = a.PersonaEmpleado.Nacionalidad, Documento = a.PersonaEmpleado.Documento, Cargo = a.Cargo, Sueldo = a.Sueldo}).ToList<dynamic>();
+        } 
     }
 }

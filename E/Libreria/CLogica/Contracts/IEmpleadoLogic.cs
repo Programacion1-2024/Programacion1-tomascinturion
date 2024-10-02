@@ -13,6 +13,7 @@ namespace CLogica.Contracts
         public void BajaEmpleado(string id);
         public void ActualizacionEmpleado(string idEmpleado, string nombre, string apellido, string nacionalidad, string cargo, double sueldo);
         public List<Empleado> ObtenerEmpleados();
-        public Empleado? ObtenerEmpleadoPorDNI(string idEmpleado);
+        public Empleado? ObtenerEmpleadoPorID(string idEmpleado);
+        public List<dynamic> ObtenerEmpleadoParaListado();
     }
 }

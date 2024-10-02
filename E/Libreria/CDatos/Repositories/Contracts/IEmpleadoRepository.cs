@@ -10,5 +10,6 @@ namespace CDatos.Repositories.Contracts
     public interface IEmpleadoRepository : IRepository<Empleado>
     {
         public void CreateEmpleado(Empleado empleado);
+        public List<Empleado> ObtenerEmpleados();
     }
 }

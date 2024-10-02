@@ -19,5 +19,9 @@ namespace CDatos.Repositories
         {
             _context.Empleado.Attach(empleado);
         }
+        public List<Empleado> ObtenerEmpleados()
+        {
+            return _context.Empleado.Include(a => a.PersonaEmpleado).ToList();
+        }
     }
 }
