@@ -1,12 +1,19 @@
 ﻿using CEntidades.Entidades;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
 namespace CLogica.Contracts
 {
     public interface IAutorLogic
     {
-        Task<List<Autor>> GetAll();
-        void AltaAutor(Autor autorNuevo);
-        void ActualizarAutor(string documento, Autor autorActualizado);
-        void EliminarAutor(string documento);
+        void AltaAutor(string nombre, string apellido, string nacionalidad, string email, string fechaNacimiento, string telefono, string biografia);
+        void BajaAutor(string documento);
+        void ActualizacionAutor(string idAutor, string nombre, string apellido, string nacionalidad, string email, string fechaNacimiento, string telefono, string biografia);
+        List<Autor> ObtenerAutores();
+        Autor? ObtenerAutorPorID(string idAutor);
+        List<dynamic> ObtenerAutoresParaListado();
     }
 }

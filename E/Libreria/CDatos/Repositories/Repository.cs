@@ -14,6 +14,11 @@ namespace CDatos.Repositories
             this._context = context;
         }
 
+        public IEnumerable<T> FindAll()
+        {
+            return this._context.Set<T>().ToList();
+        }
+
         public async Task<IEnumerable<T>> FindAllAsync()
         {
             return await this._context.Set<T>().ToListAsync();
@@ -29,7 +34,12 @@ namespace CDatos.Repositories
             return this._context.Set<T>().Where(expression).ToList();
         }
 
-        public async Task<T> GetById(int id)
+        public T GetById(int id)
+        {
+            return this._context.Set<T>().Find(id);
+        }
+
+        public async Task<T> GetByIdAsync(int id)
         {
             return await this._context.Set<T>().FindAsync(id);
         }

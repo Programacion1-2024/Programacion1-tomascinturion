@@ -8,6 +8,7 @@ using System;
 using CDatos.Contexts;
 using Microsoft.EntityFrameworkCore;
 using System.Configuration;
+using CPresentacion;
 
 namespace EjemploRepositorios
 {
@@ -28,7 +29,7 @@ namespace EjemploRepositorios
             var host = CreateHostBuilder().Build();
             _serviceProvider = host.Services;
 
-            Application.Run(_serviceProvider.GetRequiredService<Form1>());
+            Application.Run(_serviceProvider.GetRequiredService<ABMCliente>());
         }
 
         static IHostBuilder CreateHostBuilder()
@@ -37,11 +38,25 @@ namespace EjemploRepositorios
                 .ConfigureServices((context, services) => {
 
                     services.AddTransient<IAutorLogic, AutorLogic>();
+                    services.AddTransient<IEmpleadoLogic, EmpleadoLogic>();
+                    services.AddTransient<IPersonaLogic, PersonaLogic>();
+                    services.AddTransient<ILibroLogic, LibroLogic>();
+                    services.AddTransient<IClienteLogic, ClienteLogic>();
+                    //services.AddTransient<IEditorialLogic, EditorialLogic>();
+                    //services.AddTransient<ICopiaLogic, CopiaLogic>();
+
 
                     services.AddTransient<IAutorRepository, AutorRepository>();
                     services.AddTransient<IEmpleadoRepository, EmpleadoRepository>();
+                    services.AddTransient<IPersonaRepository, PersonaRepository>();
+                    services.AddTransient<ILibroRepository, LibroRepository>();
+                    services.AddTransient<IClienteRepository, ClienteRepository>();
+                    //services.AddTransient<IEditorialRepository, EditorialRepository>();
+                    //services.AddTransient<ICopiaRepository, CopiaRepository>();
 
-                    services.AddTransient<Form1>();
+                    services.AddTransient<ABMAutor>();
+                    services.AddTransient<ABMCliente>();
+                    services.AddTransient<ABMLibro>();
 
                     services.AddDbContext<LibreriaContext>(options => options.UseSqlServer("Data Source=localhost\\SQLEXPRESS;Initial Catalog=LibreriaProg2024;Integrated Security=True;TrustServerCertificate=true"), ServiceLifetime.Transient);
                 });

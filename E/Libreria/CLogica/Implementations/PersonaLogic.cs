@@ -1,148 +1,152 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using CDatos.Contexts;
+using CDatos.Repositories;
 using CDatos.Repositories.Contracts;
 using CEntidades.Entidades;
 using CLogica.Contracts;
+using System.Linq;
+using System.Text.RegularExpressions;
 
 namespace CLogica.Implementations
 {
     public class PersonaLogic : IPersonaLogic
     {
         private IPersonaRepository _personaRepository;
+
         public PersonaLogic(IPersonaRepository personaRepository)
         {
             _personaRepository = personaRepository;
         }
-        public void AltaPersona(Persona personaNueva)
+
+        public async Task<List<Persona>> ObtenerPersonas()
         {
-            List<String> camposinvalidos = new List<string>();
+            return await _personaRepository.GetAll();
+        }
 
-            if (string.IsNullOrEmpty(personaNueva.Nombre) || !IsValidName(personaNueva.Nombre))
-                throw new ArgumentException("Nombre inválido");
+        public Persona AltaPersona(Persona personaAgregar)
+        {
+            Persona personaNueva = new Persona();
 
-            if (string.IsNullOrEmpty(personaNueva.Apellido) || !IsValidName(personaNueva.Apellido))
-                throw new ArgumentException("Apellido inválido");
+            List<string> camposErroneos = new List<string>();
 
-            if (string.IsNullOrEmpty(personaNueva.Documento) || !IsValidDocumento(personaNueva.Documento) || _personaRepository.FindByCondition(p => p.Documento == personaNueva.Documento).Count() != 0)
-                throw new ArgumentException("Documento inválido");
-
-            if (string.IsNullOrEmpty(personaNueva.Telefono) || !IsValidTelefono(personaNueva.Telefono))
-                throw new ArgumentException("Teléfono inválido");
-
-            if (string.IsNullOrEmpty(personaNueva.Email) || !IsValidEmail(personaNueva.Email))
-                throw new ArgumentException("Email inválido");
-
-            if (camposinvalidos.Count > 0)
+            if (personaAgregar == null)
             {
-                throw new ArgumentException();
+                throw new ArgumentNullException("No se ha ingresado ninguna persona.");
             }
 
-            Persona persona = new Persona();
-            persona.Nombre = personaNueva.Nombre;
-            persona.Apellido = personaNueva.Apellido;
-            persona.Nacionalidad = personaNueva.Nacionalidad;
-            persona.Documento = personaNueva.Documento;
-            persona.TipoDocumento = personaNueva.TipoDocumento;
-            persona.Telefono = personaNueva.Telefono;
-            persona.Email = personaNueva.Email;
-            if (personaNueva.Autor != null)
+            if (!ValidacionesLogic.DocumentoEsValido(personaAgregar.Documento) || _personaRepository.FindByCondition(p => p.Documento == personaAgregar.Documento).Count() != 0)
             {
-                persona.Autor = personaNueva.Autor;
+                if(personaAgregar.Documento != null)
+                {
+                    camposErroneos.Add("documento");
+                }
             }
-            if (personaNueva.Empleado != null)
+
+            if (!ValidacionesLogic.NombreApellidoEsValido(personaAgregar.Nombre))
             {
-                persona.Empleado = personaNueva.Empleado;
+                camposErroneos.Add("nombre");
             }
-            if (personaNueva.Cliente != null)
+
+            if (!ValidacionesLogic.NombreApellidoEsValido(personaAgregar.Apellido))
             {
-                persona.Cliente = personaNueva.Cliente;
+                camposErroneos.Add("apellido");
             }
-            _personaRepository.Create(persona);
+
+            if (!ValidacionesLogic.TelefonoEsValido(personaAgregar.Telefono))
+            {
+                camposErroneos.Add("telefono");
+            }
+
+            if (string.IsNullOrWhiteSpace(personaAgregar.Email))
+            {
+                camposErroneos.Add("email");
+            }
+
+            if (camposErroneos.Count > 0)
+            {
+                throw new ArgumentException("Los siguientes campos son invalidos: ", string.Join(", ", camposErroneos));
+            }
+
+            personaNueva.TipoDocumento = personaAgregar.TipoDocumento;
+            personaNueva.Documento = personaAgregar.Documento;
+            personaNueva.Nombre = personaAgregar.Nombre;
+            personaNueva.Apellido = personaAgregar.Apellido;
+            personaNueva.Nacionalidad = personaAgregar.Nacionalidad;
+            personaNueva.Telefono = personaAgregar.Telefono;
+            personaNueva.Email = personaAgregar.Email;
+            
+            _personaRepository.Create(personaNueva);
+            _personaRepository.Save();
+
+            return personaNueva;
+        }
+
+        public void BajaPersona(string id)
+        {
+            if (string.IsNullOrEmpty(id))
+            {
+                throw new ArgumentException("El documento ingresado no es valido.");
+            }
+
+            Persona? personaEliminar = new Persona();
+            if (Int32.TryParse(id, out int idPersona))
+            {
+                personaEliminar = _personaRepository.FindByCondition(p => p.IdPersona == idPersona).FirstOrDefault();
+
+                if (personaEliminar == null)
+                {
+                    throw new InvalidOperationException("La persona que se desea eliminar no existe.");
+                }
+            }
+
+            _personaRepository.Delete(personaEliminar);
             _personaRepository.Save();
         }
-        public void ActualizacionPersona(string documento, Persona personaActualizada)
+
+        public void ActualizacionPersona(Persona personaActualizar)
         {
-            List<String> camposinvalidos = new List<string>();
-
-            if (string.IsNullOrEmpty(personaActualizada.Nombre) || !IsValidName(personaActualizada.Nombre))
-                throw new ArgumentException("Nombre inválido");
-
-            if (string.IsNullOrEmpty(personaActualizada.Apellido) || !IsValidName(personaActualizada.Apellido))
-                throw new ArgumentException("Apellido inválido");
-
-            if (string.IsNullOrEmpty(personaActualizada.Telefono) || !IsValidTelefono(personaActualizada.Telefono))
-                throw new ArgumentException("Teléfono inválido");
-
-            if (string.IsNullOrEmpty(personaActualizada.Email) || !IsValidEmail(personaActualizada.Email))
-                throw new ArgumentException("Email inválido");
-
-            if (camposinvalidos.Count > 0)
+            Persona? personaExistente = _personaRepository.FindByCondition(p => p.Autor == personaActualizar.Autor).FirstOrDefault();
+            
+            if (personaExistente == null)
             {
-                throw new ArgumentException();         
+                throw new ArgumentNullException("No se encontro a la persona ingresada.");
             }
 
-            if (string.IsNullOrEmpty(documento) || !IsValidDocumento(documento))
+            List<string> camposErroneos = new List<string>();
+
+            if (!ValidacionesLogic.DocumentoEsValido(personaActualizar.Documento))
             {
-                throw new ArgumentException("El documento ingresado es invalido.");
+                camposErroneos.Add("documento");
             }
 
-            Persona? persona = _personaRepository.FindByCondition(p => p.Documento == documento).FirstOrDefault();
-
-            if(persona == null)
+            if (!ValidacionesLogic.NombreApellidoEsValido(personaActualizar.Nombre))
             {
-                throw new ArgumentNullException("No se ha encontrado una persona con ese documento");
+                camposErroneos.Add("nombre");
             }
-            persona.Nombre = personaActualizada.Nombre;
-            persona.Apellido = personaActualizada.Apellido;
-            persona.Telefono = personaActualizada.Telefono;
-            persona.Documento = personaActualizada.Documento;
-            persona.Email = personaActualizada.Email;
-            _personaRepository.Update(persona);
+
+            if (!ValidacionesLogic.NombreApellidoEsValido(personaActualizar.Apellido))
+            {
+                camposErroneos.Add("apellido");
+            }
+
+            if (!ValidacionesLogic.TelefonoEsValido(personaActualizar.Telefono))
+            {
+                camposErroneos.Add("telefono");
+            }
+
+            if (camposErroneos.Count > 0)
+            {
+                throw new ArgumentException("Los siguientes campos son invalidos: ", string.Join(", ", camposErroneos));
+            }
+
+            personaExistente.Nombre = personaActualizar.Nombre;
+            personaExistente.Apellido = personaActualizar.Apellido;
+            personaExistente.Documento = personaActualizar.Documento;
+            personaExistente.Telefono = personaActualizar.Telefono;
+            personaExistente.Email = personaActualizar.Email;
+            personaExistente.Nacionalidad = personaActualizar.Nacionalidad;
+
+            _personaRepository.Update(personaExistente);
             _personaRepository.Save();
         }
-        public void EliminarPersona(string documento)
-        {
-            if (string.IsNullOrEmpty(documento) || !IsValidDocumento(documento))
-                throw new ArgumentException("El documento ingresado es invalido.");
-
-            Persona? persona = _personaRepository.FindByCondition(p => p.Documento == documento).FirstOrDefault();
-
-            if (persona == null)
-            {
-                throw new ArgumentNullException("No se ha encontrado una persona con ese documento");
-            }
-
-            _personaRepository.Delete(persona);
-            _personaRepository.Save();
-        }
-        #region validaciones
-        public bool ContieneCaracter(string text)
-        {
-            char[] caracteres = { '!', '"', '#', '$', '%', '&', '/', '(', ')', '=', '.', ',', };
-            return caracteres.Any(p => text.Contains(p));
-        }
-        private bool IsValidName(string nombre)
-        {
-            return ContieneCaracter(nombre) && nombre.Length == 15;
-        }
-
-        private bool IsValidDocumento(string documento)
-        {
-            return documento.Length == 8 && documento.All(c => Char.IsNumber(c));
-        }
-
-        private bool IsValidTelefono(string telefono)
-        {
-            return telefono.Length != 10 && ContieneCaracter(telefono);
-        }
-
-        private bool IsValidEmail(string email)
-        {
-            return email.Contains('@') && ContieneCaracter(email);
-        }
-        #endregion validaciones
     }
 }

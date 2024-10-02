@@ -10,10 +10,11 @@ namespace CEntidades.Entidades
     {
         public int IdVenta { get; set; }
 
-        public DateTime Fecha { get; set; }
+        public DateTime FechaVenta { get; set; }
+
+        public Libro Libro { get; set; }
+        public Empleado Empleado { get; set; }
         public Cliente Cliente { get; set; }
         public FormaPago FormaPago { get; set; }
-        public Empleado Empleado { get; set; }
-        public Libro Libro { get; set; }
     }
 }

@@ -1,4 +1,5 @@
-﻿using CEntidades.Entidades;
+﻿using Azure.Identity;
+using CEntidades.Entidades;
 using Microsoft.EntityFrameworkCore;
 
 namespace CDatos.Contexts
@@ -16,13 +17,13 @@ namespace CDatos.Contexts
 
         public virtual DbSet<Autor> Autor { get; set; }
         public virtual DbSet<AutorLibro> AutorLibro { get; set; }
-        public virtual DbSet<GeneroLibro> GeneroLibro { get; set; }
         public virtual DbSet<Cliente> Cliente { get; set; }
         public virtual DbSet<Copia> Copia { get; set; }
         public virtual DbSet<Editorial> Editorial { get; set; }
         public virtual DbSet<Empleado> Empleado { get; set; }
         public virtual DbSet<FormaPago> FormaPago { get; set; }
         public virtual DbSet<Genero> Genero { get; set; }
+        public virtual DbSet<GeneroLibro> GeneroLibro { get; set; }
         public virtual DbSet<Libro> Libro { get; set; }
         public virtual DbSet<Persona> Persona { get; set; }
         public virtual DbSet<Prestamo> Prestamo { get; set; }
@@ -38,18 +39,26 @@ namespace CDatos.Contexts
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            modelBuilder.HasAnnotation("Relational:Collation", "en_US.UTF-8");    
+            modelBuilder.HasAnnotation("Relational:Collation", "en_US.UTF-8");
+
             modelBuilder.Entity<Autor>(entity =>
             {
                 entity.HasKey(e => e.IdAutor)
                     .HasName("PK_ID_AUTOR");
 
                 entity.HasMany(e => e.Libros)
-                      .WithMany(e => e.Autores)
-                      .UsingEntity<AutorLibro>(
-                        l => l.HasOne<Libro>().WithMany().HasForeignKey(e => e.IdLibro),
-                        a => a.HasOne<Autor>().WithMany().HasForeignKey(e => e.IdAutor)
-                      );
+                    .WithMany(e => e.Autores)
+                    .UsingEntity<AutorLibro>
+                    (
+                       l => l.HasOne<Libro>().WithMany().HasForeignKey(e => e.IdLibro),
+                       a => a.HasOne<Autor>().WithMany().HasForeignKey(e => e.IdAutor)
+                    );
+            });
+
+            modelBuilder.Entity<AutorLibro>(entity =>
+            {
+                entity.HasKey(e => e.IdAutorLibro)
+                    .HasName("PK_ID_AUTORLIBRO");
             });
 
             modelBuilder.Entity<Cliente>(entity =>
@@ -65,7 +74,6 @@ namespace CDatos.Contexts
                     .WithOne(e => e.Cliente)
                     .HasForeignKey("IdCliente")
                     .IsRequired();
-
             });
 
             modelBuilder.Entity<Copia>(entity =>
@@ -95,14 +103,14 @@ namespace CDatos.Contexts
                 entity.HasKey(e => e.IdEmpleado)
                     .HasName("PK_ID_EMPLEADO");
 
-                entity.HasMany(e => e.Ventas)
-                   .WithOne(e => e.Empleado)
-                   .HasForeignKey("IdEmpleado")
-                   .IsRequired();
                 entity.HasMany(e => e.Prestamos)
-                   .WithOne(e => e.Empleado)
-                   .HasForeignKey("IdEmpleado")
-                   .IsRequired();
+                    .WithOne(e => e.Empleado)
+                    .HasForeignKey("IdEmpleado")
+                    .IsRequired();
+                entity.HasMany(e => e.Ventas)
+                    .WithOne(e => e.Empleado)
+                    .HasForeignKey("IdEmpleado")
+                    .IsRequired();
             });
 
             modelBuilder.Entity<FormaPago>(entity =>
@@ -110,11 +118,11 @@ namespace CDatos.Contexts
                 entity.HasKey(e => e.IdFormaPago)
                     .HasName("PK_ID_FORMAPAGO");
 
-                entity.HasMany(e => e.Ventas)
+                entity.HasMany(e => e.Prestamos)
                     .WithOne(e => e.FormaPago)
                     .HasForeignKey("IdFormaPago")
                     .IsRequired();
-                entity.HasMany(e => e.Prestamos)
+                entity.HasMany(e => e.Ventas)
                     .WithOne(e => e.FormaPago)
                     .HasForeignKey("IdFormaPago")
                     .IsRequired();
@@ -126,11 +134,18 @@ namespace CDatos.Contexts
                     .HasName("PK_ID_GENERO");
 
                 entity.HasMany(e => e.Libros)
-                      .WithMany(e => e.Generos)
-                      .UsingEntity<GeneroLibro>(
-                        l => l.HasOne<Libro>().WithMany().HasForeignKey(e => e.IdLibro),
-                        g => g.HasOne<Genero>().WithMany().HasForeignKey(e => e.IdGenero)
-                      );
+                    .WithMany(e => e.Generos)
+                    .UsingEntity<GeneroLibro>
+                    (
+                       l => l.HasOne<Libro>().WithMany().HasForeignKey(e => e.IdLibro),
+                       g => g.HasOne<Genero>().WithMany().HasForeignKey(e => e.IdGenero)
+                    );
+            });
+
+            modelBuilder.Entity<GeneroLibro>(entity =>
+            {
+                entity.HasKey(e => e.IdGeneroLibro)
+                    .HasName("PK_ID_GENEROLIBRO");
             });
 
             modelBuilder.Entity<Libro>(entity =>
@@ -143,9 +158,9 @@ namespace CDatos.Contexts
                     .HasForeignKey("IdLibro")
                     .IsRequired();
                 entity.HasMany(e => e.Ventas)
-                    .WithOne(e => e.Libro)
-                    .HasForeignKey("IdLibro")
-                    .IsRequired();
+                   .WithOne(e => e.Libro)
+                   .HasForeignKey("IdLibro")
+                   .IsRequired();
             });
 
             modelBuilder.Entity<Persona>(entity =>
@@ -165,7 +180,7 @@ namespace CDatos.Contexts
                     .WithOne(e => e.PersonaEmpleado)
                     .HasForeignKey<Empleado>("IdPersona")
                     .IsRequired(false);
-            }); 
+            });
 
             modelBuilder.Entity<Prestamo>(entity =>
             {
@@ -178,19 +193,6 @@ namespace CDatos.Contexts
                 entity.HasKey(e => e.IdVenta)
                     .HasName("PK_ID_VENTA");
             });
-
-            modelBuilder.Entity<GeneroLibro>(entity =>
-            {
-                entity.HasKey(e => e.IdGenereoLibro)
-                    .HasName("PK_ID_GENEROLIBRO");
-            });
-
-            modelBuilder.Entity<AutorLibro>(entity =>
-            {
-                entity.HasKey(e => e.IdAutorLibro)
-                    .HasName("PK_ID_AUTORLIBRO");
-            });
-
 
             OnModelCreatingPartial(modelBuilder);
         }

@@ -10,13 +10,13 @@ namespace CEntidades.Entidades
     {
         public int IdPrestamo { get; set; }
 
-        public DateTime FechaEntrega { get; set; }
+        public DateTime FechaInicio { get; set; }
         public DateTime FechaLimite { get; set; }
         public DateTime? FechaDevolucion { get; set; }
+
+        public Empleado Empleado { get; set; }
         public Cliente Cliente { get; set; }
         public Copia Copia { get; set; }
         public FormaPago FormaPago { get; set; }
-        public Empleado Empleado { get; set; }
-
     }
 }
