@@ -34,6 +34,7 @@ namespace CLogica.Implementations
                 Persona personaNueva = _personaLogic.AltaPersona(personaAgregar);
                 Empleado empleadoAgregar = new Empleado()
                 {
+                    PersonaEmpleado = personaNueva,
                     Cargo = cargo,
                     Sueldo = sueldo,
                 };
@@ -42,7 +43,16 @@ namespace CLogica.Implementations
                 {
                     camposErroneos.Add("cargo");
                 }
+                if(camposErroneos.Count > 0)
+                {
+                    throw new ArgumentException("Los siguientes campos son inválidos: ", string.Join(", ", camposErroneos));
+                }
                 _empleadoRepository.CreateEmpleado(empleadoAgregar);
+                _empleadoRepository.Save();
+            }
+            catch(Exception) 
+            {
+                throw; 
             }
             
         }
