@@ -9,9 +9,9 @@ namespace CLogica.Contracts
 {
     public interface IEmpleadoLogic
     {
-        public void AltaEmpleado(string nombre, string apellido, string nacionalidad, string documento, string cargo, double sueldo);
+        public void AltaEmpleado(string nombre, string apellido, string nacionalidad, string cargo, double sueldo, string telefono, string email, DateTime FechaIngreso);
         public void BajaEmpleado(string id);
-        public void ActualizacionEmpleado(string idEmpleado, string nombre, string apellido, string nacionalidad, string cargo, double sueldo);
+        public void ActualizacionEmpleado(string idEmpleado, string nombre, string apellido, string nacionalidad, string cargo, double sueldo, string telefono, string email);
         public List<Empleado> ObtenerEmpleados();
         public Empleado? ObtenerEmpleadoPorID(string idEmpleado);
         public List<dynamic> ObtenerEmpleadoParaListado();

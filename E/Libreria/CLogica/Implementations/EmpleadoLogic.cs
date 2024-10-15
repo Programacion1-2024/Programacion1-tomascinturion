@@ -12,15 +12,15 @@ namespace CLogica.Implementations
 {
     public class EmpleadoLogic : IEmpleadoLogic
     {
-        private PersonaLogic _personaLogic;
+        private IPersonaLogic _personaLogic;
         private IEmpleadoRepository _empleadoRepository;
 
-        public EmpleadoLogic(PersonaLogic personaLogic, IEmpleadoRepository empleadoRepository)
+        public EmpleadoLogic(IPersonaLogic personaLogic, IEmpleadoRepository empleadoRepository)
         {
             _personaLogic = personaLogic;
             _empleadoRepository = empleadoRepository;
         }
-        public void AltaEmpleado(string nombre, string apellido, string nacionalidad, string documento, string cargo, double sueldo)
+        public void AltaEmpleado(string nombre, string apellido, string nacionalidad, string cargo, double sueldo, string telefono, string email, DateTime FechaIngreso)
         {
             try
             {
@@ -29,7 +29,10 @@ namespace CLogica.Implementations
                     Nombre = nombre,
                     Apellido = apellido,
                     Nacionalidad = nacionalidad,
-                    Documento = documento,
+                    Email = email,
+                    Telefono = telefono,
+                    
+                    
                 };
                 Persona personaNueva = _personaLogic.AltaPersona(personaAgregar);
                 Empleado empleadoAgregar = new Empleado()
@@ -37,6 +40,7 @@ namespace CLogica.Implementations
                     PersonaEmpleado = personaNueva,
                     Cargo = cargo,
                     Sueldo = sueldo,
+                    Antiguedad = FechaIngreso
                 };
                 List<string> camposErroneos = new List<string>();
                 if (string.IsNullOrEmpty(empleadoAgregar.Cargo))
@@ -81,7 +85,7 @@ namespace CLogica.Implementations
             _empleadoRepository.Save();
             _personaLogic.BajaPersona(empleadoEliminar.PersonaEmpleado.IdPersona.ToString());
         }
-        public void ActualizacionEmpleado(string idEmpleado, string nombre, string apellido, string nacionalidad, string cargo, double sueldo)
+        public void ActualizacionEmpleado(string idEmpleado, string nombre, string apellido, string nacionalidad, string cargo, double sueldo, string telefono, string email)
         {
             try
             {
@@ -98,6 +102,9 @@ namespace CLogica.Implementations
                     Nombre = nombre,
                     Apellido = apellido,
                     Nacionalidad = nacionalidad,
+                    Telefono = telefono,
+                    Email = email,
+                    
                 };
                 _personaLogic.ActualizacionPersona(personaActualizar);
 
@@ -112,7 +119,8 @@ namespace CLogica.Implementations
                 }
                 empleadoExistente.Cargo = cargo;
                 empleadoExistente.Sueldo = sueldo;
-                _empleadoRepository.CreateEmpleado(empleadoExistente);
+                
+                _empleadoRepository.Update(empleadoExistente);
                 _empleadoRepository.Save();
 
             }

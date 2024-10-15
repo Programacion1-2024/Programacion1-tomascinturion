@@ -29,7 +29,7 @@ namespace EjemploRepositorios
             var host = CreateHostBuilder().Build();
             _serviceProvider = host.Services;
 
-            Application.Run(_serviceProvider.GetRequiredService<ABMCliente>());
+            Application.Run(_serviceProvider.GetRequiredService<ABMEmpleado>());
         }
 
         static IHostBuilder CreateHostBuilder()
@@ -57,6 +57,8 @@ namespace EjemploRepositorios
                     services.AddTransient<ABMAutor>();
                     services.AddTransient<ABMCliente>();
                     services.AddTransient<ABMLibro>();
+                    services.AddTransient<ABMEmpleado>();
+
 
                     services.AddDbContext<LibreriaContext>(options => options.UseSqlServer("Data Source=localhost\\SQLEXPRESS;Initial Catalog=LibreriaProg2024;Integrated Security=True;TrustServerCertificate=true"), ServiceLifetime.Transient);
                 });

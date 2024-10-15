@@ -91,8 +91,9 @@ namespace CPresentacion
             tbApellidoModificacion.Text = empleado.PersonaEmpleado.Apellido;
             tbNacionalidadModificacion.Text = empleado.PersonaEmpleado.Nacionalidad;
             tbEmailModificacion.Text = empleado.PersonaEmpleado.Email;
-            tbSueldoModificacion.Text = empleado.PersonaEmpleado.Telefono;
+            tbTelefonoModificacion.Text = empleado.PersonaEmpleado.Telefono;
             tbCargoModificacion.Text = empleado.Cargo;
+            tbSueldoModificacion.Text = empleado.Sueldo.ToString();
         }
 
         private void btnGuardar_Click(object sender, EventArgs e)
@@ -104,6 +105,74 @@ namespace CPresentacion
             double sueldo = double.Parse(tbSueldoAlta.Text);
             string telefono = tbTelefonoAlta.Text;
             string cargo = tbCargoAlta.Text;
+            DateTime fechaIngreso = dtpFechaIngreso.Value;
+
+            try
+            {
+                _empleadoLogic.AltaEmpleado(nombre, apellido, nacionalidad, cargo, sueldo, telefono, email, fechaIngreso);
+                MessageBox.Show("El autor se ha registrado con éxito.");
+
+                tbNombreAlta.Clear();
+                tbApellidoAlta.Clear();
+                tbNacionalidadAlta.Clear();
+                tbEmailAlta.Clear();
+                tbTelefonoAlta.Clear();
+                tbCargoAlta.Clear();
+                tbSueldoAlta.Clear();
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+        private void btnActualizar_Click_1(object sender, EventArgs e)
+        {
+            string idEmpleado = tbIdEmpleadoModificacion.Text;
+            string nombre = tbNombreModificacion.Text;
+            string apellido = tbApellidoModificacion.Text;
+            string nacionalidad = tbNacionalidadModificacion.Text;
+            string email = tbEmailModificacion.Text;
+            string telefono = tbTelefonoModificacion.Text;
+            string cargo = tbCargoModificacion.Text;
+            double sueldo = double.Parse(tbSueldoModificacion.Text);
+
+            try
+            {
+                _empleadoLogic.ActualizacionEmpleado(idEmpleado, nombre, apellido, nacionalidad, cargo, sueldo, telefono, email);
+                MessageBox.Show("El autor se ha actualizado con éxito.");
+
+                tbIdEmpleadoModificacion.Clear();
+                tbNombreModificacion.Clear();
+                tbApellidoModificacion.Clear();
+                tbNacionalidadModificacion.Clear();
+                tbEmailModificacion.Clear();
+                tbSueldoModificacion.Clear();
+                tbTelefonoModificacion.Clear();
+                tbCargoModificacion.Clear();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            CargarListadoEmpleados();
+        }
+
+        private void tabControlPrincipal_Selecting_1(object sender, TabControlCancelEventArgs e)
+        {
+            if (e.TabPage == tabModificacion && !allowTabChange)
+            {
+                e.Cancel = true;
+            }
+            else
+            {
+                allowTabChange = false;
+            }
         }
     }
 }
