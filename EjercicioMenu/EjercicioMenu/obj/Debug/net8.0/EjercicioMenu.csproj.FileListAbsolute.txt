@@ -1,0 +1,14 @@
+C:\Users\tomic\OneDrive\Documentos\GitHub\EjercicioMenu\EjercicioMenu\bin\Debug\net8.0\EjercicioMenu.deps.json
+C:\Users\tomic\OneDrive\Documentos\GitHub\EjercicioMenu\EjercicioMenu\bin\Debug\net8.0\EjercicioMenu.runtimeconfig.json
+C:\Users\tomic\OneDrive\Documentos\GitHub\EjercicioMenu\EjercicioMenu\bin\Debug\net8.0\EjercicioMenu.dll
+C:\Users\tomic\OneDrive\Documentos\GitHub\EjercicioMenu\EjercicioMenu\bin\Debug\net8.0\EjercicioMenu.pdb
+C:\Users\tomic\OneDrive\Documentos\GitHub\EjercicioMenu\EjercicioMenu\obj\Debug\net8.0\EjercicioMenu.csproj.AssemblyReference.cache
+C:\Users\tomic\OneDrive\Documentos\GitHub\EjercicioMenu\EjercicioMenu\obj\Debug\net8.0\EjercicioMenu.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\tomic\OneDrive\Documentos\GitHub\EjercicioMenu\EjercicioMenu\obj\Debug\net8.0\EjercicioMenu.AssemblyInfoInputs.cache
+C:\Users\tomic\OneDrive\Documentos\GitHub\EjercicioMenu\EjercicioMenu\obj\Debug\net8.0\EjercicioMenu.AssemblyInfo.cs
+C:\Users\tomic\OneDrive\Documentos\GitHub\EjercicioMenu\EjercicioMenu\obj\Debug\net8.0\EjercicioMenu.csproj.CoreCompileInputs.cache
+C:\Users\tomic\OneDrive\Documentos\GitHub\EjercicioMenu\EjercicioMenu\obj\Debug\net8.0\EjercicioMenu.dll
+C:\Users\tomic\OneDrive\Documentos\GitHub\EjercicioMenu\EjercicioMenu\obj\Debug\net8.0\refint\EjercicioMenu.dll
+C:\Users\tomic\OneDrive\Documentos\GitHub\EjercicioMenu\EjercicioMenu\obj\Debug\net8.0\EjercicioMenu.pdb
+C:\Users\tomic\OneDrive\Documentos\GitHub\EjercicioMenu\EjercicioMenu\obj\Debug\net8.0\EjercicioMenu.genruntimeconfig.cache
+C:\Users\tomic\OneDrive\Documentos\GitHub\EjercicioMenu\EjercicioMenu\obj\Debug\net8.0\ref\EjercicioMenu.dll
