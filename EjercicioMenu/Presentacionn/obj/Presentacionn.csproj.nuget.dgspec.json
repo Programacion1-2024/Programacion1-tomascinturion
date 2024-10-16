@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\tomic\\OneDrive\\Documentos\\GitHub\\EjercicioMenu\\Presentacionn\\Presentacionn.csproj": {}
+    "C:\\Users\\tomic\\OneDrive\\Documentos\\GitHub\\Programacion1-tomascinturion\\EjercicioMenu\\Presentacionn\\Presentacionn.csproj": {}
   },
   "projects": {
-    "C:\\Users\\tomic\\OneDrive\\Documentos\\GitHub\\EjercicioMenu\\Presentacionn\\Presentacionn.csproj": {
+    "C:\\Users\\tomic\\OneDrive\\Documentos\\GitHub\\Programacion1-tomascinturion\\EjercicioMenu\\Presentacionn\\Presentacionn.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\tomic\\OneDrive\\Documentos\\GitHub\\EjercicioMenu\\Presentacionn\\Presentacionn.csproj",
+        "projectUniqueName": "C:\\Users\\tomic\\OneDrive\\Documentos\\GitHub\\Programacion1-tomascinturion\\EjercicioMenu\\Presentacionn\\Presentacionn.csproj",
         "projectName": "Presentacionn",
-        "projectPath": "C:\\Users\\tomic\\OneDrive\\Documentos\\GitHub\\EjercicioMenu\\Presentacionn\\Presentacionn.csproj",
+        "projectPath": "C:\\Users\\tomic\\OneDrive\\Documentos\\GitHub\\Programacion1-tomascinturion\\EjercicioMenu\\Presentacionn\\Presentacionn.csproj",
         "packagesPath": "C:\\Users\\tomic\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\tomic\\OneDrive\\Documentos\\GitHub\\EjercicioMenu\\Presentacionn\\obj\\",
+        "outputPath": "C:\\Users\\tomic\\OneDrive\\Documentos\\GitHub\\Programacion1-tomascinturion\\EjercicioMenu\\Presentacionn\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\tomic\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -63,7 +63,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.300/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

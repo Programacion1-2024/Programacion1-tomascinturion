@@ -41,16 +41,18 @@
             panel1.BackColor = Color.LightGray;
             panel1.Controls.Add(btCerrarSesion);
             panel1.Location = new Point(0, 0);
+            panel1.Margin = new Padding(3, 4, 3, 4);
             panel1.Name = "panel1";
-            panel1.Size = new Size(250, 451);
+            panel1.Size = new Size(250, 601);
             panel1.TabIndex = 0;
             // 
             // btCerrarSesion
             // 
             btCerrarSesion.BackColor = Color.LightGray;
-            btCerrarSesion.Location = new Point(12, 415);
+            btCerrarSesion.Location = new Point(14, 553);
+            btCerrarSesion.Margin = new Padding(3, 4, 3, 4);
             btCerrarSesion.Name = "btCerrarSesion";
-            btCerrarSesion.Size = new Size(114, 23);
+            btCerrarSesion.Size = new Size(130, 31);
             btCerrarSesion.TabIndex = 0;
             btCerrarSesion.Text = "Cerrar Sesión";
             btCerrarSesion.UseVisualStyleBackColor = false;
@@ -62,7 +64,8 @@
             pbConfiguracion.ErrorImage = (Image)resources.GetObject("pbConfiguracion.ErrorImage");
             pbConfiguracion.Image = (Image)resources.GetObject("pbConfiguracion.Image");
             pbConfiguracion.InitialImage = (Image)resources.GetObject("pbConfiguracion.InitialImage");
-            pbConfiguracion.Location = new Point(733, 12);
+            pbConfiguracion.Location = new Point(838, 16);
+            pbConfiguracion.Margin = new Padding(3, 4, 3, 4);
             pbConfiguracion.Name = "pbConfiguracion";
             pbConfiguracion.Size = new Size(55, 55);
             pbConfiguracion.TabIndex = 0;
@@ -70,11 +73,12 @@
             // 
             // Form1
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(914, 600);
             Controls.Add(pbConfiguracion);
             Controls.Add(panel1);
+            Margin = new Padding(3, 4, 3, 4);
             Name = "Form1";
             Text = "Form1";
             Load += Form1_Load;

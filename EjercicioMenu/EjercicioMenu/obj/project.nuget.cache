@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "1jLAW5oSOKEnTPzeBR7ORb+IpKmjeafXPvW4vkR2zlglwT3g5IJGb/4kRY9woAHynsBHXDTIHcFW1FnF37krhA==",
+  "dgSpecHash": "y3GyN9E+N1c=",
   "success": true,
-  "projectFilePath": "C:\\Users\\tomic\\OneDrive\\Documentos\\GitHub\\EjercicioMenu\\EjercicioMenu\\EjercicioMenu.csproj",
+  "projectFilePath": "C:\\Users\\tomic\\OneDrive\\Documentos\\GitHub\\Programacion1-tomascinturion\\EjercicioMenu\\EjercicioMenu\\EjercicioMenu.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\tomic\\.nuget\\packages\\azure.core\\1.35.0\\azure.core.1.35.0.nupkg.sha512",
     "C:\\Users\\tomic\\.nuget\\packages\\azure.identity\\1.10.3\\azure.identity.1.10.3.nupkg.sha512",

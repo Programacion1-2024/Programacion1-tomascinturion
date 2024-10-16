@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\tomic\\OneDrive\\Documentos\\GitHub\\EjercicioMenu\\EjercicioMenu\\EjercicioMenu.csproj": {}
+    "C:\\Users\\tomic\\OneDrive\\Documentos\\GitHub\\Programacion1-tomascinturion\\EjercicioMenu\\EjercicioMenu\\EjercicioMenu.csproj": {}
   },
   "projects": {
-    "C:\\Users\\tomic\\OneDrive\\Documentos\\GitHub\\EjercicioMenu\\EjercicioMenu\\EjercicioMenu.csproj": {
+    "C:\\Users\\tomic\\OneDrive\\Documentos\\GitHub\\Programacion1-tomascinturion\\EjercicioMenu\\EjercicioMenu\\EjercicioMenu.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\tomic\\OneDrive\\Documentos\\GitHub\\EjercicioMenu\\EjercicioMenu\\EjercicioMenu.csproj",
+        "projectUniqueName": "C:\\Users\\tomic\\OneDrive\\Documentos\\GitHub\\Programacion1-tomascinturion\\EjercicioMenu\\EjercicioMenu\\EjercicioMenu.csproj",
         "projectName": "EjercicioMenu",
-        "projectPath": "C:\\Users\\tomic\\OneDrive\\Documentos\\GitHub\\EjercicioMenu\\EjercicioMenu\\EjercicioMenu.csproj",
+        "projectPath": "C:\\Users\\tomic\\OneDrive\\Documentos\\GitHub\\Programacion1-tomascinturion\\EjercicioMenu\\EjercicioMenu\\EjercicioMenu.csproj",
         "packagesPath": "C:\\Users\\tomic\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\tomic\\OneDrive\\Documentos\\GitHub\\EjercicioMenu\\EjercicioMenu\\obj\\",
+        "outputPath": "C:\\Users\\tomic\\OneDrive\\Documentos\\GitHub\\Programacion1-tomascinturion\\EjercicioMenu\\EjercicioMenu\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\tomic\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -86,7 +86,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.300/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
